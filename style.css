@@ -1,0 +1,152 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 30px;
+}
+input{
+    outline: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+#container{
+    display: flex;
+    height: 95vh;
+    position: relative;
+    overflow-x: auto;
+}
+#results{
+    outline: none;
+    border-radius: 0;
+    text-decoration: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 450px;
+    height: 150px;
+    text-align: end;
+    background-color: rgb(37, 37, 37);
+}
+table{ 
+    border-radius: 10px 10px 0px 0px ;
+    font-weight: 600;
+    background-color: rgb(37, 37, 37);
+    width: 450px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+tr, td{
+    flex-flow: column;
+    flex-direction: row;
+    gap: 1.8em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(65, 63, 63);
+}
+ input{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(54, 52, 52);
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 34px;
+}
+#apagar {
+    background-image: url(imagem/backspace-symbol.png);
+    background-size: 50px; 
+    background-position: center; 
+    padding-left: 30px; 
+    background-repeat: no-repeat;
+    fill: white;
+  }
+#apagar:active{
+    background-color: rgb(65, 61, 61);
+}
+#acButton{
+    background-color: rgba(179, 19, 117, 0.726);
+}
+#acButton:active{
+    background-color: rgba(199, 44, 140, 0.726);
+}
+.sinal:active{
+    background-color: rgba(110, 108, 108, 0.63);
+}
+.sinal{
+  
+    background-color: rgba(161, 158, 158, 0.582);
+}
+#equal{
+    
+    background-color: rgba(74, 74, 241, 0.795);
+}
+#equal:active{
+    
+    background-color: rgba(104, 104, 255, 0.795);
+}
+.numbers{
+    background-color: rgb(37, 37, 37);
+}
+.numbers:active{
+    background-color: rgb(65, 61, 61);
+}
+@media (max-width: 500px) {
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;   
+    }
+    html, body{
+        height: 100%;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+    }
+    #container{
+        height: 100vh;
+        width: 100vw;
+    }
+    table{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        width: 98vw;
+        height: 100%;
+    }
+    #results{
+        font-size: 3.7rem;
+        width: 100vw;
+        height: 28vh;
+    }
+    tbody{
+        width: 100vw;
+        flex: 1;
+        height: 450px;
+    }
+    td{
+        gap: 1.3em;
+        flex: 1;
+    }
+    input{
+        flex: 1; 
+    }
+    img{
+        width: 20rem;
+    }
+}
