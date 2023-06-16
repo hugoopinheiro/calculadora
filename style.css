@@ -13,8 +13,8 @@ body{
     justify-content: center;
     background: rgb(255, 255, 255);
     width: 100vw;
-    max-height: 720px;
-    max-width: 360px;
+    max-height: 736px;
+    max-width: 380px;
 }
 table{
     /* display: flex;
