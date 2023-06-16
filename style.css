@@ -2,8 +2,24 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-body,
-img{
-    width: 30px;
+body,html{
+    height: 100vh;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+}
+table{
+    max-width: 360px;
+    width: 100%;
+    max-height: 720px;
+    height: 100%;
+    background: #fff;
+}
+input#results{
+    height: ;
 }
