@@ -11,15 +11,59 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 }
 table{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
     max-width: 360px;
     width: 100%;
     max-height: 720px;
     height: 100%;
-    background: #fff;
+    background: #3d3d3d;
+    text-align: center;
+}
+tbody > tr > td{
+    width: 25%;
+    height: calc(280px / 5);
 }
 input#results{
-    height: ;
+    height: 120px;
+    width: 100%;
+    font-size: 2.5em;
+    background: #3a3737;
+    color: #fff;
+}
+input[type="button"]{
+    border: none;
+    font-size: 1.2em;
+    height: 65%;
+    width: 65%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+    color: #fff;
+    background-color: #3a3737;
+}
+input.numbers:active, input.sinal:active, input#apagar:active{
+    background-color: #615d5d;
+}
+input#acButton{
+    background: #9c0357;
+}
+input#acButton:active{
+    background: #c5046e;
+}
+input#apagar{
+    background: url('imagem/backspace-symbol.png') no-repeat center center ;
+    background-size: 1.3em;
+    text-align: center;
+    background-color: #3a3737;
+}
+input#equal{
+    background: #612ac7;
+}
+input#equal:active{
+    background: #813eff;
 }
