@@ -22,7 +22,7 @@ table{
     text-align: center;
 }
 input#results{
-    height: 120px;
+    height: 140px;
     width: 100%;
     font-size: 2.5em;
     background: #3a3737;
@@ -31,7 +31,7 @@ input#results{
 }
 tbody > tr > td{
     width: 25%;
-    height: calc(280px / 5);
+    height: calc(260px / 5);
 }
 input[type="button"]{
     border: none;
