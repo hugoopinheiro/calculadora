@@ -21,10 +21,6 @@ table{
     background: #3d3d3d;
     text-align: center;
 }
-tbody > tr > td{
-    width: 25%;
-    height: calc(280px / 5);
-}
 input#results{
     height: 120px;
     width: 100%;
@@ -32,6 +28,10 @@ input#results{
     background: #3a3737;
     color: #fff;
     outline: none;
+}
+tbody > tr > td{
+    width: 25%;
+    height: calc(280px / 5);
 }
 input[type="button"]{
     border: none;
